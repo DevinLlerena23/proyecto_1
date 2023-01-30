@@ -1,8 +1,16 @@
-import React from 'react'
-import '@/styles/globals.css'
+import React from "react";
+//import { Toaster } from "react-hot-toast";
 
-function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import { Layout } from "components";
+import "../styles/globals.css";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <Layout>
+      {/* <Toaster />*/}
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
-export default App;
+export default MyApp;

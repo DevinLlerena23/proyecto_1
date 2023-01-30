@@ -1,18 +1,17 @@
+import {createSchema} from 'sanity'
 
-import { createSchema } from 'sanity'
+const schemaTypes = []
+import product from './Product'
+import banner from './Banner'
 
-const schemaTypes = [];
-import product from "./Product"
-import banner from "./Banner"
-
-schemaTypes.push(product);
-schemaTypes.push(banner);
+schemaTypes.push(product)
+schemaTypes.push(banner)
 
 console.log(product)
 console.log(banner)
 export default createSchema({
   name: 'default',
-  types:schemaTypes,
-});
+  types: schemaTypes,
+})
 
-export { schemaTypes };
+export {schemaTypes}

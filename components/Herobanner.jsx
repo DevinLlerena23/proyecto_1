@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { urlFor } from "../lib/Client";
+import { urlFor } from "lib/client";
 
 const HeroBanner = ({ heroBanner }) => {
   return (
@@ -19,8 +19,8 @@ const HeroBanner = ({ heroBanner }) => {
           <button type="button">{heroBanner.buttonText}</button>
         </Link>
         <div className="desc">
-          <h5>A bone le gusta el webo de Cesar</h5>
-          <p>DESCRIPTION</p>
+          <h5>PRODUCCTOS A BUEN PRECIO</h5>
+          <p>DESCRIPCION</p>
           <p>{heroBanner.desc}</p>
         </div>
       </div>
